@@ -7,6 +7,7 @@ public class Audience {
         this.bag = bag;
     }
 
+    // fixme Audience 가 Bag 의 내부 상태를 직접 변경하는 부분
     public Long buy(Ticket ticket) {
         if (bag.hasInvitation()) {
             bag.setTicket(ticket);
